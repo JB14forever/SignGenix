@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.signgenix">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo2"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SignGenix">
+        <activity
+            android:name=".menu.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.signgenix.menu.ModesActivity"
+            android:label="MODES"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.example.signgenix.menu.OptionSelectActivity"
+            android:label="SELECT OPTION"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.example.signgenix.menu.OrdinaryMenuActivity"
+            android:label="MENU"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.example.signgenix.tutorial.TutorialActivity"
+            android:label="iGest :: TUTORIAL"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.example.signgenix.keyboard.SignToTextActivity"
+            android:label="iGest :: KEYBOARD"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.example.signgenix.voice.SpeechToTextActivity"
+            android:label="iGest :: VOICE RECOGNITION"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.example.signgenix.textsign.ComposeActivity"
+            android:label="Text to Sign"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.example.signgenix.gesture.GestureActivity"
+            android:label="iGesture"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.example.signgenix.subtitle.PlayerActivity"
+            android:label="Sign Subtitle"
+            android:screenOrientation="portrait"></activity>
+
+        <service
+            android:name="com.example.signgenix.keyboard.SignToTextKeyboard"
+            android:label="iGest Recognito Keyboard"
+            android:permission="android.permission.BIND_INPUT_METHOD"
+            android:exported="true">
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/sign_to_text_method" />
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
