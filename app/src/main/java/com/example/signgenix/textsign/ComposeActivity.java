@@ -2,7 +2,6 @@ package com.example.signgenix.textsign;
 
 import android.os.Bundle;
 import android.os.Handler;
-
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -39,11 +38,16 @@ public class ComposeActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             char letter = text.charAt(finalI);
-                            sign.setImageResource(MapActivity.data[letter - 'a']);
-
+                            char secondValue = ' ';
+                            int compareOneTwo = Character.compare(letter, secondValue);
+                            if (compareOneTwo == 0) {
+                                sign.setImageResource(R.drawable.space);
+                            }
+                            else {
+                                sign.setImageResource(MapActivity.data[letter - 'a']);
+                            }
                         }
                     }, 500 * i);
-
                 }
             }
         });

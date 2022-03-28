@@ -37,15 +37,15 @@
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.example.signgenix.tutorial.TutorialActivity"
-            android:label="iGest :: TUTORIAL"
+            android:label="SIGNGENIX - TUTORIAL"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.example.signgenix.keyboard.SignToTextActivity"
-            android:label="iGest :: KEYBOARD"
+            android:label="SIGNGENIX - KEYBOARD"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.example.signgenix.voice.SpeechToTextActivity"
-            android:label="iGest :: VOICE RECOGNITION"
+            android:label="SIGNGENIX - VOICE RECOGNITION"
             android:screenOrientation="portrait"></activity>
 
 
@@ -55,7 +55,7 @@
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.example.signgenix.gesture.GestureActivity"
-            android:label="iGesture"
+            android:label="SIGNGENIX"
             android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.example.signgenix.subtitle.PlayerActivity"
@@ -64,7 +64,7 @@
 
         <service
             android:name="com.example.signgenix.keyboard.SignToTextKeyboard"
-            android:label="iGest Recognito Keyboard"
+            android:label="SignGenix Keyboard"
             android:permission="android.permission.BIND_INPUT_METHOD"
             android:exported="true">
             <meta-data

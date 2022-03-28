@@ -8,8 +8,8 @@ import java.util.HashMap;
 
 public class MapActivity {
 
-    public static HashMap<String, Integer> map = new HashMap<String, Integer>(26);
-    public static int[] data = {R.drawable.a_a, R.drawable.b_b, R.drawable.c_c, R.drawable.d_d, R.drawable.e_e, R.drawable.f_f, R.drawable.g_g, R.drawable.h_h, R.drawable.i_i, R.drawable.j_j, R.drawable.k_k, R.drawable.l_l, R.drawable.m_m, R.drawable.n_n, R.drawable.o_o, R.drawable.p_p, R.drawable.q_q, R.drawable.r_r, R.drawable.s_s, R.drawable.t_t, R.drawable.u_u, R.drawable.v_v, R.drawable.w_w, R.drawable.x_x, R.drawable.y_y, R.drawable.z_z};
+    public static HashMap<String, Integer> map = new HashMap<String, Integer>(27);
+    public static int[] data = {R.drawable.a_a, R.drawable.b_b, R.drawable.c_c, R.drawable.d_d, R.drawable.e_e, R.drawable.f_f, R.drawable.g_g, R.drawable.h_h, R.drawable.i_i, R.drawable.j_j, R.drawable.k_k, R.drawable.l_l, R.drawable.m_m, R.drawable.n_n, R.drawable.o_o, R.drawable.p_p, R.drawable.q_q, R.drawable.r_r, R.drawable.s_s, R.drawable.t_t, R.drawable.u_u, R.drawable.v_v, R.drawable.w_w, R.drawable.x_x, R.drawable.y_y, R.drawable.z_z,R.drawable.space_space};
 
     public static void main(String[] args) {
 
@@ -39,6 +39,8 @@ public class MapActivity {
         map.put("x", R.drawable.x);
         map.put("y", R.drawable.y);
         map.put("z", R.drawable.z);
+        map.put(" ", R.drawable.space);
+
 
     }
 }

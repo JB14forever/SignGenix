@@ -22,7 +22,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
 
-    private String[] titles = {"iGest Keyboard", "iVoice Recognition", "Text to Sign", "Sign Tutorial", "Sign Subtitle", "iGesture"};
+    private String[] titles = {"SignGenix Keyboard", "iVoice Recognition", "Text to Sign", "Sign Tutorial", "Sign Subtitle", "iGesture"};
 
     private String[] details = {"Keyboard details", "Voice details", "Text to Sign details", "Tutorial details", "Subtitle details", "Gesture Character Recognition"};
 
